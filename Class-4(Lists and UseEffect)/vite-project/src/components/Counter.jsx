@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -26,6 +26,8 @@ function Counter() {
     console.log("use Effect executed");
     document.title = `button clicked for ${count} times`;
   }, []); // it only runs once when componnet renders for tge first time
+
+  // Clean up of useEffect
 
   return (
     <div>
